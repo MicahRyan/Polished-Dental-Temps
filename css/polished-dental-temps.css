@@ -378,6 +378,7 @@ p {
   bottom: 0px;
   z-index: 9999;
   display: none;
+  overflow: auto;
   background-color: #000;
   opacity: 0;
 }
@@ -397,7 +398,7 @@ p {
 
 .modal-close {
   display: inline-block;
-  padding: 1rem;
+  padding: 2rem;
   float: right;
   color: #fff;
   cursor: pointer;
@@ -411,8 +412,13 @@ p {
   bottom: 0px;
   z-index: 9999;
   display: none;
+  overflow: auto;
   background-color: #000;
   opacity: 0;
+}
+
+.form-label {
+  font-size: 1rem;
 }
 
 html.w-mod-js *[data-ix="loading-screen"] {
@@ -592,6 +598,11 @@ html.w-mod-js *[data-ix="fade-in-slide-right"] {
   }
   .cta-heading {
     display: block;
+  }
+  .modal-container {
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
   }
 }
 
